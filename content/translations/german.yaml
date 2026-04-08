@@ -1,0 +1,159 @@
+# yaml-language-server: $schema=../translations-schema.yaml
+downloadCv: Zur neuesten Version auf
+tasks: Aufgaben
+technologies: Technologien
+projects: Projekte
+social:
+  title: Sozial
+contact:
+  title: Kontakt
+  email: E-Mail
+  phone: Telefon
+language:
+  title: Sprachen
+  languages:
+    - name: Deutsch
+      proficiency: Muttersprache
+    - name: Englisch
+      proficiency: B2
+profile:
+  title: Profil
+  text: Als Senior Software Engineer bringe ich Full-Stack-Erfahrung mit und habe
+    meine größten fachlichen Stärken im Backend, in der Softwarearchitektur und in
+    der Entwicklung belastbarer Systemlandschaften. Besonders motivieren mich komplexe
+    Projekte in interdisziplinären Teams, in denen technische Tiefe, klare Kommunikation
+    und nachhaltige Lösungen gefragt sind.
+workExperience:
+  title: Berufserfahrung
+  companies:
+    - name: Smart Cyber Security GmbH
+      positions:
+        - from: 02/2024
+          title: Senior Software Engineer
+      tasks:
+        - Konzeption und Weiterentwicklung einer skalierbaren Identity- und Billing-Plattform.
+        - Enge Zusammenarbeit mit Produktmanagement und Stakeholdern zur präzisen Anforderungsdefinition und erfolgreichen Umsetzung.
+        - Verantwortung für die Sicherstellung von Skalierbarkeit, Sicherheit und Performance der Plattform.
+        - Integration externer Systeme, einschließlich Zahlungsanbietern, Identity Providern und ERP-Systemen.
+      technologies:
+        - Kotlin
+        - Java
+        - TypeScript
+        - PostgreSQL
+        - Docker
+        - Koog
+        - Spring Boot
+        - Keycloak
+        - Vue.js
+    - name: WOGRA AG
+      positions:
+        - from: 06/2022
+          to: 01/2024
+          title: Softwareentwickler
+      tasks:
+        - Konzeption und Architektur skalierbarer Softwarelösungen für eine B2B-Plattform für digitale Produkte.
+        - Entwicklung und Integration von Machine-Learning-basierten Klassifizierungs- und Kategorisierungssystemen.
+        - Durchführung von Code Reviews zur Sicherstellung von Codequalität, Wartbarkeit und Einhaltung von Best Practices.
+        - Integration und Anbindung externer Schnittstellen, u. a. REST-APIs und Drittanbieter-Systeme.
+        - Analyse und Performance-Optimierung bestehender Legacy-Systeme.
+        - Aufbau und Weiterentwicklung von CI/CD-Pipelines zur Automatisierung von Build-, Test- und Deployment-Prozessen.
+        - Enge Zusammenarbeit mit Stakeholdern auf Kundenseite zur Anforderungsanalyse und Umsetzung.
+      technologies:
+        - Kotlin
+        - Java
+        - TypeScript
+        - PostgreSQL
+        - Docker
+        - Spring Boot
+        - Keycloak
+        - Angular
+    - name: Aurivus GmbH
+      positions:
+        - from: 11/2021
+          to: 02/2022
+          title: Softwareentwickler
+        - from: 03/2020
+          to: 02/2021
+          title: Werkstudent
+      tasks:
+        - Entwicklung von Software zur effizienten Aufbereitung und Konvertierung großer 3D-Datenmengen für das Training von Machine-Learning-Systemen.
+        - Durchführung statistischer Analysen des Rauschverhaltens von 3D-Messdaten.
+        - Entwicklung von Plugins für CAD-Software.
+        - Erweiterung und Optimierung der CI-Pipeline.
+      technologies:
+        - Python
+        - PyTorch
+        - C++
+        - C#
+        - Docker
+        - AWS
+        - Autodesk Revit
+    - name: Daimler AG
+      positions:
+        - from: 03/2021
+          to: 10/2021
+          title: Masterand
+        - from: 01/2018
+          to: 10/2019
+          title: Werkstudent & Bachelorand
+      tasks:
+        - Modellierung hybrider Machine-Learning-Modelle für Batteriezellen auf Basis von Messdaten.
+        - Optimierung von Ladestrategien für Hochvoltbatterien mittels evolutionärer Algorithmen.
+      technologies:
+        - Matlab
+        - Simulink
+        - C++
+        - Python
+    - name: Universität Ulm
+      positions:
+        - from: 10/2017
+          to: 07/2020
+          title: Studentische Hilfskraft
+      tasks:
+        - Tutor für Technische Mechanik und Programmieren mit MATLAB, inklusive Erstellung von Übungsblättern und Durchführung von Tutorien.
+    - name: BAUER Maschinen GmbH
+      positions:
+        - from: 07/2016
+          to: 09/2016
+          title: Mechaniker
+        - from: 07/2013
+          to: 10/2014
+          title: Mechaniker
+      tasks:
+        - Endmontage und Inbetriebnahme von Seilbaggern mit Schlitzwandfräse
+education:
+  title: Ausbildung
+  steps:
+    - from: 10/2019
+      to: 10/2021
+      title: Master of Science, Computational Science and Engineering
+      institution: Universität Ulm und Hochschule Ulm
+      institutionNewline: true
+      grading: 'Note: 1.6'
+    - from: 10/2016
+      to: 10/2019
+      title: Bachelor of Science, Computational Science and Engineering
+      institution: Universität Ulm und Hochschule Ulm
+      institutionNewline: true
+      grading: 'Note: 1.4'
+    - from: 09/2014
+      to: 07/2016
+      title: Staatl. gepr.  Maschinenbautechniker
+      institution: Technikerschule Augsburg
+      grading: 'Note: 1,18'
+    - from: 04/2012
+      to: 07/2013
+      title: Berufsausbildung Industriemechaniker
+      institution: MAN Diesel & Turbo SE
+      grading: 'Note: 1,2'
+    - from: 09/2010
+      to: 03/2012
+      title: Berufsausbildung Industriemechaniker
+      institution: manroland AG
+      grading: 'Wechsel des Ausbildungsbetriebs infolge Insolvenz des Unternehmens'
+    - from: 08/2001
+      to: 07/2010
+      title: Qualifizierender Hauptschulabschluss
+      institution: Volksschule Hollenbach
+      grading: 'Note: 1,7'
+easterEgg: Du hast das erste Easter Egg gefunden. Glückwunsch!
