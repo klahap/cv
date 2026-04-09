@@ -24,14 +24,32 @@ properties:
     type: string
   social:
     type: object
-    required: [title]
+    required: [ title ]
     additionalProperties: false
     properties:
       title:
         type: string
+  personalDetails:
+    type: object
+    required: [ title, data ]
+    additionalProperties: false
+    properties:
+      title:
+        type: string
+      data:
+        type: array
+        items:
+          type: object
+          required: [ name, value ]
+          additionalProperties: false
+          properties:
+            name:
+              type: string
+            value:
+              type: string
   contact:
     type: object
-    required: [title, email, phone]
+    required: [ title, email, phone ]
     additionalProperties: false
     properties:
       title:
@@ -42,7 +60,7 @@ properties:
         type: string
   language:
     type: object
-    required: [title, languages]
+    required: [ title, languages ]
     additionalProperties: false
     properties:
       title:
@@ -51,7 +69,7 @@ properties:
         type: array
         items:
           type: object
-          required: [name, proficiency]
+          required: [ name, proficiency ]
           additionalProperties: false
           properties:
             name:
@@ -60,7 +78,7 @@ properties:
               type: string
   profile:
     type: object
-    required: [title, text]
+    required: [ title, text ]
     additionalProperties: false
     properties:
       title:
@@ -69,7 +87,7 @@ properties:
         type: string
   workExperience:
     type: object
-    required: [title, companies]
+    required: [ title, companies ]
     additionalProperties: false
     properties:
       title:
@@ -78,7 +96,7 @@ properties:
         type: array
         items:
           type: object
-          required: [name, positions]
+          required: [ name, positions ]
           additionalProperties: false
           properties:
             name:
@@ -87,7 +105,7 @@ properties:
               type: array
               items:
                 type: object
-                required: [from, title]
+                required: [ from, title ]
                 additionalProperties: false
                 properties:
                   from:
@@ -106,7 +124,7 @@ properties:
                 type: string
   education:
     type: object
-    required: [title, steps]
+    required: [ title, steps ]
     additionalProperties: false
     properties:
       title:
@@ -115,7 +133,7 @@ properties:
         type: array
         items:
           type: object
-          required: [from, to, title, institution, grading]
+          required: [ from, to, title, institution, grading ]
           additionalProperties: false
           properties:
             from:

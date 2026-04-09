@@ -1,0 +1,162 @@
+# yaml-language-server: $schema=../translations-schema.yaml
+downloadCv: Latest version available at
+tasks: Responsibilities
+technologies: Technologies
+projects: Projects
+social:
+  title: Profiles
+personalDetails:
+  title: Personal Details
+  data:
+    - name: Location
+      value: 86551 Aichach
+    - name: Date of Birth
+      value: 09.11.1994
+contact:
+  title: Contact
+  email: Email
+  phone: Phone
+language:
+  title: Languages
+  languages:
+    - name: German
+      proficiency: Native
+    - name: English
+      proficiency: B2
+profile:
+  title: Profile
+  text: As a Senior Software Engineer specializing in backend development and software architecture, I design and build scalable, secure, and high-performance platform solutions, particularly in the areas of identity and billing. I combine strong technical expertise with a clear understanding of product requirements, take ownership of architectural decisions, and place great emphasis on maintainable, sustainable systems in close collaboration with cross-functional teams.
+workExperience:
+  title: Professional Experience
+  companies:
+    - name: Smart Cyber Security GmbH
+      positions:
+        - from: 02/2024
+          title: Senior Software Engineer
+      tasks:
+        - Design and further development of a scalable identity and billing platform.
+        - Close collaboration with product management and stakeholders to define requirements precisely and ensure successful implementation.
+        - Responsibility for ensuring scalability, security, and performance of the platform.
+        - Integration of external systems, including payment providers, identity providers, and ERP systems.
+      technologies:
+        - Kotlin
+        - Java
+        - TypeScript
+        - PostgreSQL
+        - Docker
+        - Koog
+        - Spring Boot
+        - Keycloak
+        - Vue.js
+    - name: WOGRA AG
+      positions:
+        - from: 06/2022
+          to: 01/2024
+          title: Software Developer
+      tasks:
+        - Design and architecture of scalable software solutions for a B2B platform for digital products.
+        - Development and integration of machine learning-based classification and categorization systems.
+        - Conducting code reviews to ensure code quality, maintainability, and adherence to best practices.
+        - Integration and connection of external interfaces, including REST APIs and third-party systems.
+        - Analysis and performance optimization of existing legacy systems.
+        - Design and enhancement of CI/CD pipelines to automate build, test, and deployment processes.
+        - Close collaboration with stakeholders on the client side for requirement analysis and implementation.
+      technologies:
+        - Kotlin
+        - Java
+        - TypeScript
+        - PostgreSQL
+        - Docker
+        - Spring Boot
+        - Keycloak
+        - Angular
+    - name: Aurivus GmbH
+      positions:
+        - from: 11/2021
+          to: 02/2022
+          title: Software Developer
+        - from: 03/2020
+          to: 02/2021
+          title: Working Student
+      tasks:
+        - Development of software for efficient processing and conversion of large-scale 3D data for training machine learning systems.
+        - Statistical analysis of noise behavior in 3D measurement data.
+        - Development of plugins for CAD software.
+        - Extension and optimization of the CI pipeline.
+      technologies:
+        - Python
+        - PyTorch
+        - C++
+        - C#
+        - Docker
+        - AWS
+        - Autodesk Revit
+    - name: Daimler AG
+      positions:
+        - from: 03/2021
+          to: 10/2021
+          title: Master's Thesis Student
+        - from: 01/2018
+          to: 10/2019
+          title: Working Student and Bachelor's Thesis Student
+      tasks:
+        - Modeling of hybrid machine learning models for battery cells based on measurement data.
+        - Optimization of charging strategies for high-voltage batteries using evolutionary algorithms.
+      technologies:
+        - Matlab
+        - Simulink
+        - C++
+        - Python
+    - name: Ulm University
+      positions:
+        - from: 10/2017
+          to: 07/2020
+          title: Student Assistant
+      tasks:
+        - Tutor for engineering mechanics and programming with MATLAB, including preparation of exercises and conducting tutorials.
+    - name: BAUER Maschinen GmbH
+      positions:
+        - from: 07/2016
+          to: 09/2016
+          title: Mechanic
+        - from: 07/2013
+          to: 10/2014
+          title: Mechanic
+      tasks:
+        - Final assembly and commissioning of cable excavators with diaphragm wall cutters.
+education:
+  title: Education
+  steps:
+    - from: 10/2019
+      to: 10/2021
+      title: Master of Science, Computational Science and Engineering
+      institution: Ulm University and Ulm University of Applied Sciences
+      institutionNewline: true
+      grading: 'Grade: 1.6'
+    - from: 10/2016
+      to: 10/2019
+      title: Bachelor of Science, Computational Science and Engineering
+      institution: Ulm University and Ulm University of Applied Sciences
+      institutionNewline: true
+      grading: 'Grade: 1.4'
+    - from: 09/2014
+      to: 07/2016
+      title: State-Certified Mechanical Engineering Technician
+      institution: Augsburg Technical School
+      grading: 'Grade: 1.18'
+    - from: 04/2012
+      to: 07/2013
+      title: Apprenticeship as Industrial Mechanic
+      institution: MAN Diesel & Turbo SE
+      grading: 'Grade: 1.2'
+    - from: 09/2010
+      to: 03/2012
+      title: Apprenticeship as Industrial Mechanic
+      institution: manroland AG
+      grading: 'Change of training company due to company insolvency'
+    - from: 08/2001
+      to: 07/2010
+      title: Qualified Secondary School Certificate
+      institution: Hollenbach Primary and Secondary School
+      grading: 'Grade: 1.7'
+easterEgg: You found the first Easter egg. Congratulations!

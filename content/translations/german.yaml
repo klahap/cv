@@ -5,6 +5,13 @@ technologies: Technologien
 projects: Projekte
 social:
   title: Sozial
+personalDetails:
+  title: Persönliches
+  data:
+    - name: Wohnort
+      value: 86551 Aichach
+    - name: Geburtstag
+      value: 09.11.1994
 contact:
   title: Kontakt
   email: E-Mail
@@ -18,11 +25,13 @@ language:
       proficiency: B2
 profile:
   title: Profil
-  text: Als Senior Software Engineer bringe ich Full-Stack-Erfahrung mit und habe
-    meine größten fachlichen Stärken im Backend, in der Softwarearchitektur und in
-    der Entwicklung belastbarer Systemlandschaften. Besonders motivieren mich komplexe
-    Projekte in interdisziplinären Teams, in denen technische Tiefe, klare Kommunikation
-    und nachhaltige Lösungen gefragt sind.
+  text: Als Senior Software Engineer mit Schwerpunkt auf Backend-Entwicklung
+    und Softwarearchitektur konzipiere und entwickle ich skalierbare, sichere
+    und performante Plattformlösungen, insbesondere im Bereich Identity und Billing.
+    Dabei verbinde ich technische Tiefe mit einem klaren Verständnis für
+    Produktanforderungen, übernehme Verantwortung für Architekturentscheidungen
+    und lege großen Wert auf wartbare, nachhaltige Systeme in enger Zusammenarbeit
+    mit interdisziplinären Teams.
 workExperience:
   title: Berufserfahrung
   companies:
@@ -32,7 +41,7 @@ workExperience:
           title: Senior Software Engineer
       tasks:
         - Konzeption und Weiterentwicklung einer skalierbaren Identity- und Billing-Plattform.
-        - Enge Zusammenarbeit mit Produktmanagement und Stakeholdern zur präzisen Anforderungsdefinition und erfolgreichen Umsetzung.
+        - Enge Zusammenarbeit mit Produktmanagement und Stakeholdern zur präzisen Definition von Anforderungen und erfolgreichen Umsetzung.
         - Verantwortung für die Sicherstellung von Skalierbarkeit, Sicherheit und Performance der Plattform.
         - Integration externer Systeme, einschließlich Zahlungsanbietern, Identity Providern und ERP-Systemen.
       technologies:
@@ -95,7 +104,7 @@ workExperience:
           title: Masterand
         - from: 01/2018
           to: 10/2019
-          title: Werkstudent & Bachelorand
+          title: Werkstudent und Bachelorand
       tasks:
         - Modellierung hybrider Machine-Learning-Modelle für Batteriezellen auf Basis von Messdaten.
         - Optimierung von Ladestrategien für Hochvoltbatterien mittels evolutionärer Algorithmen.
@@ -120,7 +129,7 @@ workExperience:
           to: 10/2014
           title: Mechaniker
       tasks:
-        - Endmontage und Inbetriebnahme von Seilbaggern mit Schlitzwandfräse
+        - Endmontage und Inbetriebnahme von Seilbaggern mit Schlitzwandfräsen.
 education:
   title: Ausbildung
   steps:
@@ -129,16 +138,16 @@ education:
       title: Master of Science, Computational Science and Engineering
       institution: Universität Ulm und Hochschule Ulm
       institutionNewline: true
-      grading: 'Note: 1.6'
+      grading: 'Note: 1,6'
     - from: 10/2016
       to: 10/2019
       title: Bachelor of Science, Computational Science and Engineering
       institution: Universität Ulm und Hochschule Ulm
       institutionNewline: true
-      grading: 'Note: 1.4'
+      grading: 'Note: 1,4'
     - from: 09/2014
       to: 07/2016
-      title: Staatl. gepr.  Maschinenbautechniker
+      title: Staatl. gepr. Maschinenbautechniker
       institution: Technikerschule Augsburg
       grading: 'Note: 1,18'
     - from: 04/2012

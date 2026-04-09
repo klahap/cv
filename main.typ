@@ -79,13 +79,13 @@
     ],
     [
       #align(horizon)[
-        #text(weight: "bold")[
-          #title
-        ]
+        *#title*
       ]
     ],
   )
 ]
+
+#let date(value) = text(number-width: "tabular")[#value]
 
 #grid(
   columns: (22%, 76%),
@@ -122,6 +122,16 @@
   ],
 
   [
+    #if "personalDetails" in data [
+      #section-title(data.personalDetails.title)
+      #for element in data.personalDetails.data [
+        *#element.name* \
+        #element.value
+        #v(4pt)
+      ]
+      #v(4pt)
+    ]
+  
     #section-title(data.social.title)
 
     *LinkedIn* \
@@ -175,27 +185,23 @@
         gutter: 10pt,
         ..company.positions.map(position => (
           if "to" in position [
-            #position.from \- #position.to
+            #date(position.from) \- #date(position.to)
           ] else [
-            #position.from
+            #date(position.from)
           ],
-          text(weight: "bold")[#position.title],
+          [*#position.title*],
         )).flatten(),
       )
 
       #if "tasks" in company [
-        #text(weight: "bold")[
-          #data.tasks:
-        ]
+        *#data.tasks:*
         #for task in company.tasks [
           - #task
         ]
       ]
 
       #if "technologies" in company [
-        #text(weight: "bold")[
-          #data.technologies:
-        ]
+        *#data.technologies:*
         #company.technologies.join(", ")
       ]
 
@@ -208,8 +214,8 @@
       #grid(
         columns: (25%, 75%),
         gutter: 10pt,
-        step.from + [ \- ] + step.to,
-        text(weight: "bold")[#step.title]
+        date(step.from) + [ \- ] + date(step.to),
+        [*#step.title*]
         + (if "institutionNewline" in step and step.institutionNewline { [ \ ] } else { [ \- ] })
         + step.institution
         + [ \ ]
@@ -217,9 +223,7 @@
       )
 
       #if "projects" in step [
-        #text(weight: "bold")[
-          #data.projects:
-        ]
+        *#data.projects*
         #for project in step.projects [
           - #project
         ]
