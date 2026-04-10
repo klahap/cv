@@ -10,10 +10,12 @@
       #release-version,
       #datetime.today().display()
     ]
-    #h(1fr)
-    #text(fill: gray)[
-      #link("https://github.com/" + general.githubName + "/cv/releases")[
-        #data.downloadCv GitHub
+    #if "githubName" in general [
+      #h(1fr)
+      #text(fill: gray)[
+        #link("https://github.com/" + general.githubName + "/cv/releases")[
+          #data.downloadCv GitHub
+        ]
       ]
     ]
   ]
@@ -85,19 +87,19 @@
   )
 ]
 
-#let date(value) = text(number-width: "tabular")[#value]
+#let style-date(value) = text(number-width: "tabular")[#value]
 
 #grid(
   columns: (22%, 76%),
   gutter: 2%,
   [
-    #if "profilePicturePlaceholder" not in general or not general.profilePicturePlaceholder {
+    #if "profilePictureFileName" in general {
       rect(
         inset: 0pt,
         stroke: 2pt + primaryColor,
       )[
         #image(
-          "content/images/profile-picture.jpg",
+          "content/images/" + general.profilePictureFileName,
           width: 90%,
         )
       ]
@@ -107,9 +109,12 @@
   [
     #text(size: 28pt, weight: "bold")[
       #smallcaps(general.fullName)
-    ] \
-    #text(size: 12pt, fill: primaryColor, weight: "bold")[
-      #smallcaps(general.jobTitle)
+    ]
+    #if "jobTitle" in general [
+      #linebreak()
+      #text(size: 12pt, fill: primaryColor, weight: "bold")[
+        #smallcaps(general.jobTitle)
+      ]
     ]
 
     #if "profile" in data [
@@ -131,34 +136,46 @@
       ]
       #v(4pt)
     ]
-  
+
     #section-title(data.social.title)
 
-    *LinkedIn* \
-    #link("https://www.linkedin.com/in/" + general.linkedInName)[
-      #general.fullName
+    #if "linkedInName" in general [
+      *LinkedIn* \
+      #link("https://www.linkedin.com/in/" + general.linkedInName)[
+        #general.fullName
+      ]
+
+      #v(4pt)
+    ]
+
+    #if "githubName" in general [
+      *GitHub* \
+      #link("https://github.com/" + general.githubName)[
+        #general.githubName
+      ]
+
+      #v(4pt)
     ]
 
     #v(4pt)
-
-    *GitHub* \
-    #link("https://github.com/" + general.githubName)[
-      #general.githubName
-    ]
-
-    #v(8pt)
 
     #section-title(data.contact.title)
 
-    *#data.contact.email* \
-    #link("mailto:" + general.emailAddress)
+    #if "emailAddress" in general [
+      *#data.contact.email* \
+      #link("mailto:" + general.emailAddress)
+
+      #v(4pt)
+    ]
+
+    #if "phoneNumber" in general [
+      *#data.contact.phone* \
+      #link("tel:" + general.phoneNumber)
+
+      #v(4pt)
+    ]
 
     #v(4pt)
-
-    *#data.contact.phone* \
-    #link("tel:" + general.phoneNumber)
-
-    #v(8pt)
 
     #section-title(data.language.title)
 
@@ -185,11 +202,11 @@
         gutter: 10pt,
         ..company.positions.map(position => (
           if "to" in position [
-            #date(position.from) \- #date(position.to)
+            #style-date(position.from) \- #style-date(position.to)
           ] else [
-            #date(position.from)
+            #style-date(position.from)
           ],
-          [*#position.title*],
+          [ *#position.title* ],
         )).flatten(),
       )
 
@@ -214,8 +231,8 @@
       #grid(
         columns: (25%, 75%),
         gutter: 10pt,
-        date(step.from) + [ \- ] + date(step.to),
-        [*#step.title*]
+        style-date(step.from) + [ \- ] + style-date(step.to),
+        [ *#step.title* ]
         + (if "institutionNewline" in step and step.institutionNewline { [ \ ] } else { [ \- ] })
         + step.institution
         + [ \ ]
