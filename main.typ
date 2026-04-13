@@ -90,11 +90,11 @@
 #let style-date(value) = text(number-width: "tabular")[#value]
 
 #grid(
-  columns: (22%, 76%),
+  columns: (23%, 75%),
   gutter: 2%,
   [
-    #if "profilePictureFileName" in general {
-      rect(
+    #if "profilePictureFileName" in general [
+      #rect(
         inset: 0pt,
         stroke: 2pt + primaryColor,
       )[
@@ -103,7 +103,68 @@
           width: 90%,
         )
       ]
-    }
+    ]
+
+    #v(4pt)
+
+    #if "personalDetails" in data [
+      #section-title(data.personalDetails.title)
+      #for element in data.personalDetails.data [
+        *#element.name* \
+        #element.value
+        #v(4pt)
+      ]
+
+      #v(4pt)
+    ]
+
+    #section-title(data.social.title)
+
+    #if "linkedInName" in general [
+      *LinkedIn* \
+      #link("https://www.linkedin.com/in/" + general.linkedInName)[
+        #general.fullName
+      ]
+      #v(4pt)
+    ]
+
+    #if "githubName" in general [
+      *GitHub* \
+      #link("https://github.com/" + general.githubName)[
+        #general.githubName
+      ]
+      #v(4pt)
+    ]
+
+    #v(4pt)
+
+    #section-title(data.contact.title)
+
+    #if "emailAddress" in general [
+      *#data.contact.email* \
+      #link("mailto:" + general.emailAddress)
+      #v(4pt)
+    ]
+
+    #if "phoneNumber" in general [
+      *#data.contact.phone* \
+      #link("tel:" + general.phoneNumber)
+      #v(4pt)
+    ]
+
+    #v(4pt)
+
+    #section-title(data.language.title)
+
+    #for language in data.language.languages [
+      *#language.name* \
+      #language.proficiency
+      #v(4pt)
+    ]
+
+    #text(fill: white)[
+      #data.easterEgg
+    ]
   ],
 
   [
@@ -124,74 +185,29 @@
 
       #data.profile.text
     ]
-  ],
 
-  [
-    #if "personalDetails" in data [
-      #section-title(data.personalDetails.title)
-      #for element in data.personalDetails.data [
-        *#element.name* \
-        #element.value
-        #v(4pt)
-      ]
+    #if "coreSkills" in data [
       #v(4pt)
+
+      #section-title(data.coreSkills.title)
+
+      #for skill in data.coreSkills.skills [
+        - #skill
+      ]
     ]
 
-    #section-title(data.social.title)
-
-    #if "linkedInName" in general [
-      *LinkedIn* \
-      #link("https://www.linkedin.com/in/" + general.linkedInName)[
-        #general.fullName
-      ]
-
+    #if "coreTechnologies" in data [
       #v(4pt)
-    ]
 
-    #if "githubName" in general [
-      *GitHub* \
-      #link("https://github.com/" + general.githubName)[
-        #general.githubName
+      #section-title(data.coreTechnologies.title)
+
+      #for technology in data.coreTechnologies.technologies [
+        - #technology
       ]
-
-      #v(4pt)
     ]
 
     #v(4pt)
 
-    #section-title(data.contact.title)
-
-    #if "emailAddress" in general [
-      *#data.contact.email* \
-      #link("mailto:" + general.emailAddress)
-
-      #v(4pt)
-    ]
-
-    #if "phoneNumber" in general [
-      *#data.contact.phone* \
-      #link("tel:" + general.phoneNumber)
-
-      #v(4pt)
-    ]
-
-    #v(4pt)
-
-    #section-title(data.language.title)
-
-    #for language in data.language.languages [
-      *#language.name* \
-      #language.proficiency
-
-      #v(4pt)
-    ]
-
-    #text(fill: white)[
-      #data.easterEgg
-    ]
-  ],
-
-  [
     #section-title(data.workExperience.title)
 
     #for company in data.workExperience.companies [
@@ -246,5 +262,5 @@
         ]
       ]
     ]
-  ]
+  ],
 )

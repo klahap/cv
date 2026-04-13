@@ -84,6 +84,28 @@ properties:
         type: string
       text:
         type: string
+  coreSkills:
+    type: object
+    required: [title, skills]
+    additionalProperties: false
+    properties:
+      title:
+        type: string
+      skills:
+        type: array
+        items:
+          type: string
+  coreTechnologies:
+    type: object
+    required: [title, technologies]
+    additionalProperties: false
+    properties:
+      title:
+        type: string
+      technologies:
+        type: array
+        items:
+          type: string
   workExperience:
     type: object
     required: [title, companies]
