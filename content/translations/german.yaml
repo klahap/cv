@@ -10,7 +10,7 @@ personalDetails:
   data:
     - name: Wohnort
       value: 86551 Aichach
-    - name: Geburtstag
+    - name: Geburtsdatum
       value: 09.11.1994
 contact:
   title: Kontakt
