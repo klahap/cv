@@ -3,6 +3,22 @@ downloadCv: Latest version available at
 tasks: Responsibilities
 technologies: Technologies
 projects: Projects
+coreSkills:
+  title: Core Skills
+  skills:
+    - Design and development of scalable, secure systems and platform solutions.
+    - Software architecture, design decisions and code reviews.
+    - Integration and connectivity of external systems and interfaces.
+    - Agile collaboration with cross-functional teams and stakeholders.
+    - Application of modern AI and ML technologies to solve complex problems.
+coreTechnologies:
+  title: Core Technologies
+  technologies:
+    - 'Languages: Kotlin/Java (Spring Boot), TypeScript (Vue.js, Angular), Python, C++, Rust, C'
+    - 'Databases: PostgreSQL, SQLite, S3, Supabase'
+    - 'Identity & Auth: Keycloak'
+    - 'Infrastructure: Docker, Kubernetes, AWS'
+    - 'CI/CD: GitLab CI, GitHub Actions, Bitbucket Pipelines'
 social:
   title: Profiles
 personalDetails:
@@ -57,7 +73,7 @@ workExperience:
         - Design and architecture of scalable software solutions for a B2B platform for digital products.
         - Development and integration of machine learning-based classification and categorization systems.
         - Conducting code reviews to ensure code quality, maintainability, and adherence to best practices.
-        - Integration and connection of external interfaces, including REST APIs and third-party systems.
+        - Integration of external interfaces and third-party systems (REST APIs).
         - Analysis and performance optimization of existing legacy systems.
         - Design and enhancement of CI/CD pipelines to automate build, test, and deployment processes.
         - Close collaboration with stakeholders on the client side for requirement analysis and implementation.

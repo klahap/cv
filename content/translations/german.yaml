@@ -3,6 +3,22 @@ downloadCv: Zur neuesten Version auf
 tasks: Aufgaben
 technologies: Technologien
 projects: Projekte
+coreSkills:
+  title: Kernkompetenzen
+  skills:
+    - Konzeption und Entwicklung skalierbarer, sicherer Systeme und Plattformlösungen.
+    - Softwarearchitektur, Designentscheidungen und Code-Reviews.
+    - Integration und Anbindung externer Systeme und Schnittstellen.
+    - Agile Zusammenarbeit mit interdisziplinären Teams und Stakeholdern.
+    - Einsatz moderner KI- und ML-Technologien zur Lösung komplexer Problemstellungen.
+coreTechnologies:
+  title: Kerntechnologien
+  technologies:
+    - 'Sprachen: Kotlin/Java (Spring Boot), TypeScript (Vue.js, Angular), Python, C++, Rust, C'
+    - 'Datenbanken: PostgreSQL, SQLite, S3, Supabase'
+    - 'Identity & Auth: Keycloak'
+    - 'Infrastruktur: Docker, Kubernetes, AWS'
+    - 'CI/CD: GitLab CI, GitHub Actions, Bitbucket Pipelines'
 social:
   title: Sozial
 personalDetails:
@@ -61,12 +77,12 @@ workExperience:
           title: Softwareentwickler
       tasks:
         - Konzeption und Architektur skalierbarer Softwarelösungen für eine B2B-Plattform für digitale Produkte.
-        - Entwicklung und Integration von Machine-Learning-basierten Klassifizierungs- und Kategorisierungssystemen.
-        - Durchführung von Code Reviews zur Sicherstellung von Codequalität, Wartbarkeit und Einhaltung von Best Practices.
-        - Integration und Anbindung externer Schnittstellen, u. a. REST-APIs und Drittanbieter-Systeme.
-        - Analyse und Performance-Optimierung bestehender Legacy-Systeme.
-        - Aufbau und Weiterentwicklung von CI/CD-Pipelines zur Automatisierung von Build-, Test- und Deployment-Prozessen.
-        - Enge Zusammenarbeit mit Stakeholdern auf Kundenseite zur Anforderungsanalyse und Umsetzung.
+        - Entwicklung und Integration von ML-basierten Klassifizierungs- und Kategorisierungssystemen.
+        - Code Reviews zur Sicherstellung von Codequalität, Wartbarkeit und Einhaltung von Best Practices.
+        - Integration externer Schnittstellen und Drittanbieter-Systeme (REST-APIs).
+        - Performance-Optimierung und Modernisierung bestehender Legacy-Systeme.
+        - Aufbau und Weiterentwicklung von CI/CD-Pipelines für Build-, Test- und Deployment-Prozesse.
+        - Anforderungsanalyse und Umsetzung in enger Zusammenarbeit mit Kundenstakeholdern.
       technologies:
         - Kotlin
         - Java
