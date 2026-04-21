@@ -33,20 +33,20 @@
 
 #show link: underline
 
-#show "GitHub": name => box[
+#show "GitHubWithIcon": name => box[
   #box(image(
     "icons/github.svg",
     height: 0.7em,
   ))
-  #name
+  GitHub
 ]
 
-#show "LinkedIn": name => box[
+#show "LinkedInWithIcon": name => box[
   #box(image(
     "icons/linkedin.svg",
     height: 0.7em,
   ))
-  #name
+  LinkedIn
 ]
 
 #let primaryColor = rgb(50, 110, 180)
@@ -132,7 +132,7 @@
     #section-title(data.social.title)
 
     #if "linkedInName" in general [
-      *LinkedIn* \
+      *LinkedInWithIcon* \
       #link("https://www.linkedin.com/in/" + general.linkedInName)[
         #general.fullName
       ]
@@ -140,7 +140,7 @@
     ]
 
     #if "githubName" in general [
-      *GitHub* \
+      *GitHubWithIcon* \
       #link("https://github.com/" + general.githubName)[
         #general.githubName
       ]
