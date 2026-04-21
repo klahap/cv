@@ -89,6 +89,17 @@
 
 #let style-date(value) = text(number-width: "tabular")[#value]
 
+#let join-or-break(first: none, second: none, delimiter-join: none, delimiter-break: [ \ ]) = box(layout(size => {
+  let joined = first + delimiter-join + second
+  let (height,) = measure(width: size.width, joined)
+  let sizeLine = measure(width: size.width, "I")
+  if height >= sizeLine.height * 2 {
+    first + delimiter-break + second
+  } else {
+    joined
+  }
+}))
+
 #grid(
   columns: (23%, 75%),
   gutter: 2%,
@@ -248,11 +259,11 @@
         columns: (25%, 75%),
         gutter: 10pt,
         style-date(step.from) + [ \- ] + style-date(step.to),
-        [ *#step.title* ]
-        + (if "institutionNewline" in step and step.institutionNewline { [ \ ] } else { [ \- ] })
-        + step.institution
-        + [ \ ]
-        + text(size: 8pt)[#step.grading],
+        join-or-break(
+          first: [ *#step.title* ], 
+          second: step.institution, 
+          delimiter-join: [ \- ],
+        ) + [ \ ] + text(size: 8pt)[#step.grading],
       )
 
       #if "projects" in step [

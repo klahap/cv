@@ -131,13 +131,11 @@ education:
       to: 10/2021
       title: Master of Science, Computational Science and Engineering
       institution: Ulm University and Ulm University of Applied Sciences
-      institutionNewline: true
       grading: 'Grade: 1.6'
     - from: 10/2016
       to: 10/2019
       title: Bachelor of Science, Computational Science and Engineering
       institution: Ulm University and Ulm University of Applied Sciences
-      institutionNewline: true
       grading: 'Grade: 1.4'
     - from: 09/2014
       to: 07/2016
